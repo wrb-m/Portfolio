@@ -293,7 +293,7 @@
     <div class="container">
       <h2>CV</h2>
       <div class="card"><div class="card-inner">
-        <p>Download my latest CV: <a href="./assets/Waleed_Raza_CV.pdf" target="_blank" rel="noopener" type="application/pdf">Waleed_Raza_CV.pdf</a> (place your file in <code>assets/</code>).</p>
+        <p>Download my latest CV: <a href="./assets/Curriculum_Vitae_Waleed.pdf" target="_blank" rel="noopener" type="application/pdf">Curriculum_Vitae_Waleed.pdf</a> (place your file in <code>assets/</code>).</p>
         <p>Keywords: AAM/UAM, noise modeling, aeroacoustics, routing optimization, vertiport design, DAA, YOLO, PyTorch, MATLAB, AEDT, AIRNOISEUAM, Helios, PSU‑WOPWOP.</p>
       </div></div>
     </div>
