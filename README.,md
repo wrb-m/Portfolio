@@ -9,7 +9,15 @@
   <meta property="og:title" content="Waleed Raza — Research Portfolio" />
   <meta property="og:description" content="AAM/UAM research: noise prediction & mitigation, routing networks, vertiport ops, and DAA." />
   <meta property="og:type" content="website" />
+  <!-- NEW: social preview + favicon -->
+  <meta property="og:image" content="assets/waleed.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Waleed Raza — Research Portfolio" />
+  <meta name="twitter:description" content="AAM/UAM research: noise prediction & mitigation, routing networks, vertiport ops, and DAA." />
+  <meta name="twitter:image" content="assets/waleed.jpg" />
+  <link rel="icon" href="assets/favicon.png" />
   <meta name="theme-color" content="#1f78b4" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -90,6 +98,9 @@
     .chip .dot.p{background:var(--soft5)}
     .chip .dot.y{background:var(--soft6)}
     .twocol{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    /* NEW: avatar styling */
+    .avatar{width:100%;max-width:260px;border-radius:24px;display:block;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.12)}
+    .avatar.round{border-radius:999px}
     @media (max-width: 900px){
       .hero .top{grid-template-columns:1fr}
       .grid.cols-3{grid-template-columns:1fr}
@@ -133,23 +144,30 @@
             <span class="pill">DAA (Computer Vision)</span>
           </div>
           <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn" href="#publications">See publications<https://scholar.google.com/citations?user=qOyRccEAAAAJ&hl=en>
+            <!-- FIXED: button links directly to Scholar (update ID if needed) -->
+            <a class="btn" href="https://scholar.google.com/citations?user=qOyRccEAAAAJ&hl=en" target="_blank" rel="noopener">See publications</a>
             <a class="btn secondary" href="#projects">Explore projects</a>
           </div>
         </div>
-        <div class="card">
-          <div class="card-inner">
-            <h3 style="margin:0 0 10px">Research Snapshot</h3>
-            <div class="grid cols-2">
-              <div>
-                <div class="chip"><span class="dot b"></span> Survey on UAM noise tools (AEDT, AIRNOISEUAM, Helios, PSU‑WOPWOP)</div>
-                <div class="chip"><span class="dot g"></span> Dynamic airspace corridor allocation with safety & equity</div>
-                <div class="chip"><span class="dot r"></span> School/hospital avoidance in route planning</div>
-              </div>
-              <div>
-                <div class="chip"><span class="dot o"></span> YOLOv9/YOLOv11 on AVOIDDS for intruder detection</div>
-                <div class="chip"><span class="dot p"></span> Vertiport siting & hub‑and‑spoke accessibility</div>
-                <div class="chip"><span class="dot y"></span> Public acceptance & community noise metrics</div>
+        <div>
+          <!-- NEW: headshot card (place assets/waleed.jpg in repo) -->
+          <div class="card" style="margin-bottom:18px"><div class="card-inner" style="display:flex;justify-content:center">
+            <img src="assets/waleed.jpg" alt="Portrait of Waleed Raza" class="avatar round" loading="lazy" />
+          </div></div>
+          <div class="card">
+            <div class="card-inner">
+              <h3 style="margin:0 0 10px">Research Snapshot</h3>
+              <div class="grid cols-2">
+                <div>
+                  <div class="chip"><span class="dot b"></span> Survey on UAM noise tools (AEDT, AIRNOISEUAM, Helios, PSU‑WOPWOP)</div>
+                  <div class="chip"><span class="dot g"></span> Dynamic airspace corridor allocation with safety & equity</div>
+                  <div class="chip"><span class="dot r"></span> School/hospital avoidance in route planning</div>
+                </div>
+                <div>
+                  <div class="chip"><span class="dot o"></span> YOLOv9/YOLOv11 on AVOIDDS for intruder detection</div>
+                  <div class="chip"><span class="dot p"></span> Vertiport siting & hub‑and‑spoke accessibility</div>
+                  <div class="chip"><span class="dot y"></span> Public acceptance & community noise metrics</div>
+                </div>
               </div>
             </div>
           </div>
@@ -196,7 +214,7 @@
         <div class="pub-item">
           <strong>Advanced Air Mobility: Innovations, Applications, Challenges, and Future Potential</strong> — <em>AIAA Journal of Air Transportation</em> (accepted).</div>
       </div></div>
-      <p class="pub-meta" style="margin-top:10px">Full list on <a href="#contact">Google Scholar</a> and <a href="#contact">ORCID</a>.</p>
+      <p class="pub-meta" style="margin-top:10px">Full list on <a href="https://scholar.google.com/citations?user=qOyRccEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> and <a href="https://orcid.org/0000-0002-4142-3195" target="_blank" rel="noopener">ORCID</a>. <!-- TODO: replace with your real ORCID --></p>
     </div>
   </section>
 
@@ -273,7 +291,7 @@
     <div class="container">
       <h2>CV</h2>
       <div class="card"><div class="card-inner">
-        <p>Download my latest CV: <a href="assets/Waleed_Raza_CV.pdf">Waleed_Raza_CV.pdf</a> (place your file in <code>assets/</code>).</p>
+        <p>Download my latest CV: <a href="assets/Waleed_Raza_CV.pdf" download>Waleed_Raza_CV.pdf</a> (place your file in <code>assets/</code>).</p>
         <p>Keywords: AAM/UAM, noise modeling, aeroacoustics, routing optimization, vertiport design, DAA, YOLO, PyTorch, MATLAB, AEDT, AIRNOISEUAM, Helios, PSU‑WOPWOP.</p>
       </div></div>
     </div>
@@ -302,13 +320,28 @@
         <div class="card"><div class="card-inner">
           <h3>Profiles</h3>
           <div class="social">
-            <a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
-            · <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-            · <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-            · <a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://github.com/wrbmf" target="_blank" rel="noopener">GitHub</a>
+            · <a href="https://scholar.google.com/citations?user=qOyRccEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            · <a href="https://www.linkedin.com/in/waleed-raza-b4690953/" target="_blank" rel="noopener">LinkedIn</a>
+            · <a href="https://orcid.org/0000-0002-4142-3195" target="_blank" rel="noopener">ORCID</a>
+            · <a href="https://sciprofiles.com/profile/waleedraza" target="_blank" rel="noopener">SCI Profiles</a>
+            · <a href="https://www.scopus.com/authid/detail.uri?authorId=57216947819" target="_blank" rel="noopener">Scopus</a>
+            · <a href="https://www.adscientificindex.com/scientist-print/5152049/" target="_blank" rel="noopener">AD Scientific Index</a>
           </div>
         </div></div>
       </div>
+    </div>
+  </section>
+
+  <section id="map" class="section">
+    <div class="container">
+      <h2>Map — Current Affiliation</h2>
+      <div class="card"><div class="card-inner">
+        <p style="margin-top:0;margin-bottom:12px;">Embry‑Riddle Aeronautical University, Daytona Beach, FL</p>
+        <iframe
+          src="https://www.google.com/maps?q=Embry-Riddle%20Aeronautical%20University%20Daytona%20Beach&output=embed"
+          width="100%" height="380" style="border:0;border-radius:var(--radius);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div></div>
     </div>
   </section>
 
@@ -328,7 +361,7 @@
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click',e=>{
         const target=document.querySelector(a.getAttribute('href'));
-        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}
+        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});} 
       })
     })
     // Active link highlight
