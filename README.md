@@ -103,6 +103,11 @@
     .social a { position: relative; z-index: 3; }
     #map { isolation: isolate; }
     #map iframe { display:block; width:100%; height:380px; border:0; position:relative; z-index:0; }
+    @media (min-width: 901px){
+      /* Put photo on the left, text on the right (desktop only) */
+      .hero .top .col-photo{grid-column:1}
+      .hero .top .col-text{grid-column:2}
+    }
     @media (max-width: 900px){
       .hero .top{grid-template-columns:1fr}
       .grid.cols-3{grid-template-columns:1fr}
@@ -134,7 +139,7 @@
   <main id="home" class="hero">
     <div class="container">
       <div class="top">
-        <div>
+        <div class="col-text">
           <span class="badge">Advanced Air Mobility • Urban Air Mobility  • Wireless Communication • Underwater Acoustics Engineering</span>
           <h1>Researching Noise‑optimized Routing, Vertiport Design and Operations & Detect and Avoid (DAA) for eVTOL/UAS</h1>
           <p class="lead">PhD Candidate, Electrical Engineering & Computer Science, Embry‑Riddle Aeronautical University. I am currently developing theoretical models and tools for <strong>noise prediction/mitigation (SEL, DNL)</strong>, <strong>dynamic airspace allocation</strong>, and <strong> vision-based detect-and-avoid </strong> (YOLOv9/YOLOv11) to enable scalable AAM operations.</p>
@@ -151,10 +156,10 @@
             <a class="btn secondary" href="#projects">Explore projects</a>
           </div>
         </div>
-        <div>
+        <div class="col-photo">
           <!-- NEW: headshot card (place assets/waleed.jpg in repo) -->
           <div class="card" style="margin-bottom:18px"><div class="card-inner" style="display:flex;justify-content:center">
-            <img src="assets/waleed.jpg" alt="Portrait of Waleed Raza" class="avatar round" loading="lazy" />
+            <img src="assets/waleed.jpg" alt="Portrait of Waleed Raza" class="avatar round" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22260%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%231f78b4%22/><text x=%2250%25%22 y=%2252%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Inter,Arial%22 font-size=%2272%22 fill=%22white%22>WR</text></svg>'" />
           </div></div>
           <div class="card">
             <div class="card-inner">
@@ -293,7 +298,7 @@
     <div class="container">
       <h2>CV</h2>
       <div class="card"><div class="card-inner">
-        <p>Download my latest CV: <a href="./assets/Curriculum_Vitae_Waleed.pdf" target="_blank" rel="noopener" type="application/pdf">Curriculum_Vitae_Waleed.pdf</a> (place your file in <code>assets/</code>).</p>
+        <p>Download my latest CV: <a href="./assets/Waleed_Raza_CV.pdf" target="_blank" rel="noopener" type="application/pdf">Waleed_Raza_CV.pdf</a> (place your file in <code>assets/</code>).</p>
         <p>Keywords: AAM/UAM, noise modeling, aeroacoustics, routing optimization, vertiport design, DAA, YOLO, PyTorch, MATLAB, AEDT, AIRNOISEUAM, Helios, PSU‑WOPWOP.</p>
       </div></div>
     </div>
@@ -316,7 +321,7 @@
       <div class="twocol">
         <div class="card"><div class="card-inner">
           <h3>Get in touch</h3>
-          <p>Email: <a href="mailto:raza.waleed@my.erau.edu">razaw@my.erau.edu</a></p>
+          <p>Email: <a href="mailto:raza.waleed@outlook.com">raza.waleed@outlook.com</a></p>
           <p>Affiliation: Embry‑Riddle Aeronautical University (Daytona Beach, FL)</p>
         </div></div>
         <div class="card"><div class="card-inner">
