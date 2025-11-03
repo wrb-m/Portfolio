@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Waleed Raza — Research Portfolio</title>
-  <meta name="description" content="Research portfolio of Waleed Raza — Advanced Air Mobility (AAM) / Urban Air Mobility (UAM), noise-optimized routing, vertiport design, and detect-and-avoid (DAA)." />
+  <meta name="description" content=" Research portfolio of Waleed Raza — Advanced Air Mobility (AAM) / Urban Air Mobility (UAM), noise-optimized routing, vertiport operations, and detect-and-avoid (DAA)." />
   <meta name="author" content="Waleed Raza" />
   <meta property="og:title" content="Waleed Raza — Research Portfolio" />
   <meta property="og:description" content="AAM/UAM research: noise prediction & mitigation, routing networks, vertiport ops, and DAA." />
@@ -122,9 +122,9 @@
     <div class="container">
       <div class="top">
         <div>
-          <span class="badge">Advanced Air Mobility • Urban Air Mobility</span>
-          <h1>Researching noise‑optimized routing, vertiport design & DAA for eVTOL/UAS</h1>
-          <p class="lead">PhD Candidate, Electrical Engineering & Computer Science, Embry‑Riddle Aeronautical University. I build models and tools for <strong>noise prediction/mitigation (SEL, DNL)</strong>, <strong>dynamic airspace allocation</strong>, and <strong>vision‑based detect‑and‑avoid</strong> (YOLOv9/v11) to enable scalable AAM operations.</p>
+          <span class="badge">Advanced Air Mobility • Urban Air Mobility  • Wireless Communication • Underwater Acoustics Engineering</span>
+          <h1>Researching Noise‑optimized Routing, Vertiport Design and Operations & Detect and Avoid (DAA) for eVTOL/UAS</h1>
+          <p class="lead">PhD Candidate, Electrical Engineering & Computer Science, Embry‑Riddle Aeronautical University. I am currently developing theoretical models and tools for <strong>noise prediction/mitigation (SEL, DNL)</strong>, <strong>dynamic airspace allocation</strong>, and <strong> vision-based detect-and-avoid </strong> (YOLOv9/YOLOv11) to enable scalable AAM operations.</p>
           <div class="kpi">
             <span class="pill">AAM / UAM</span>
             <span class="pill">Noise & Acoustics</span>
@@ -133,7 +133,7 @@
             <span class="pill">DAA (Computer Vision)</span>
           </div>
           <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn" href="#publications">See publications</a>
+            <a class="btn" href="#publications">See publications<https://scholar.google.com/citations?user=qOyRccEAAAAJ&hl=en>
             <a class="btn secondary" href="#projects">Explore projects</a>
           </div>
         </div>
