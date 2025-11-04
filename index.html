@@ -1,4 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- HEAD -->
-<?xml version="1.0" encoding="utf-8"?>
+<body>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Waleed Raza — Research Portfolio</title>
+  <meta name="description" content="Research portfolio of Waleed Raza — AAM/UAM, noise-optimized routing, vertiport operations, and DAA." />
+  <meta name="author" content="Waleed Raza" />
+  <meta property="og:title" content="Waleed Raza — Research Portfolio" />
+  <meta property="og:description" content="AAM/UAM research: noise prediction & mitigation, routing networks, vertiport ops, and DAA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/waleed.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Waleed Raza — Research Portfolio" />
+  <meta name="twitter:description" content="AAM/UAM research: noise prediction & mitigation, routing networks, vertiport ops, and DAA." />
+  <meta name="twitter:image" content="assets/waleed.jpg" />
+  <link rel="icon" href="assets/favicon.png" />
+  <meta name="theme-color" content="#1f78b4" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https: data: blob:;
+                 img-src 'self' https: data:;
+                 frame-src https://www.google.com https://www.openstreetmap.org;
+                 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+                 font-src https://fonts.gstatic.com;
+                 script-src 'self';
+                 connect-src 'self'">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="dot"></span> <span>Waleed Raza</span></div>
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="datasets.html">Datasets</a>
+          <a href="talks.html">Talks</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a class="btn" href="contact.html">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <div class="top">
+        <div class="card" style="max-width:220px;justify-self:start">
+          <div class="card-inner" style="display:flex;justify-content:center">
+            <img src="assets/waleed.jpg" alt="Portrait of Waleed Raza" class="avatar" loading="lazy"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22220%22 height=%22220%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%231f78b4%22/><text x=%2250%25%22 y=%2252%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Inter,Arial%22 font-size=%2272%22 fill=%22white%22>WR</text></svg>'" />
+          </div>
+        </div>
+        <div>
+          <span class="badge">Advanced Air Mobility • Urban Air Mobility • Wireless Communication • Underwater Acoustics Engineering</span>
+          <h1>Noise-optimized Routing, Vertiport Ops & Detect-and-Avoid (DAA) for eVTOL/UAS</h1>
+          <p class="lead">PhD Candidate, EECS @ Embry-Riddle. Working on <strong>noise prediction/mitigation (SEL, DNL)</strong>, <strong>dynamic airspace allocation</strong>, and <strong>vision-based DAA</strong> (YOLOv9/YOLOv11).</p>
+          <div class="kpi">
+            <span class="pill">AAM / UAM</span><span class="pill">Noise & Acoustics</span><span class="pill">Routing Optimization</span><span class="pill">Vertiport Ops</span><span class="pill">DAA (Computer Vision)</span>
+          </div>
+          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="https://scholar.google.com/citations?user=qOyRccEAAAAJ&amp;hl=en" target="_blank" rel="noopener">See publications</a>
+            <a class="btn secondary" href="projects.html">Explore projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container">
+      <h2>Research Snapshot</h2>
+      <div class="grid cols-2">
+        <div>
+          <div class="card"><div class="card-inner">
+            <div class="grid cols-1">
+              <div class="pill">Survey on UAM noise tools (AEDT, AIRNOISEUAM, Helios, PSU-WOPWOP)</div>
+              <div class="pill">Dynamic corridor allocation: safety & equity</div>
+              <div class="pill">School/hospital avoidance</div>
+            </div>
+          </div></div>
+        </div>
+        <div>
+          <div class="card"><div class="card-inner">
+            <div class="grid cols-1">
+              <div class="pill">YOLOv9/YOLOv11 on AVOIDDS</div>
+              <div class="pill">Vertiport siting & accessibility</div>
+              <div class="pill">Community noise metrics</div>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="news">
+    <div class="container">
+      <h2>News</h2>
+      <div class="card"><div class="card-inner">
+        <div class="news-item"><div class="news-date">Oct 2025</div><div>Submitted manuscript on <em>UAM Noise Prediction Tools</em> with expanded taxonomy and 18 CONOPS.</div></div>
+        <div class="news-item"><div class="news-date">Aug 2025</div><div>Completed YOLOv9c training on AVOIDDS; mAP50 ≈ 0.892, F1 ≈ 0.879.</div></div>
+        <div class="news-item"><div class="news-date">Apr 2025</div><div>Poster accepted at ERAU School Week on dynamic airspace allocation.</div></div>
+      </div></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Waleed Raza</div>
+      <div><a href="#">Back to top</a></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year"></span> Waleed Raza </div>
+        <div><a href="#">Back to top</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
+
