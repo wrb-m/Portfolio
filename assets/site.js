@@ -25,4 +25,6 @@
   const here = (location.pathname.split('/').pop() || '');
   if (map[here]) document.title = map[here] + '';
 })();
+gtag('config', 'G-BTPSF8WYK4', { 'anonymize_ip': true });
+
 
